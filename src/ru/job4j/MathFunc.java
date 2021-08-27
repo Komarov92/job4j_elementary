@@ -12,16 +12,11 @@ public class MathFunc {
         return y;
     }
 
-    public static int func3(int x) {
-        int y = x * 2;
-        return y;
-    }
 
     public static void main(String[] args) {
-        int result1 = MathFunc.func1(3);
+        int result1 = MathFunc.func1(100);
         int result2 = MathFunc.func2(5);
-        int result3 = MathFunc.func3(100);
-        int total = result1 + result2 + result3;
-        System.out.println(total);
+        int result3 = result1 + result2;
+        System.out.println(result3);
     }
 }
