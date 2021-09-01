@@ -5,8 +5,9 @@ public class Greeting {
         String idea = "I like Java!";
         System.out.println(idea);
         String id = idea + "But I am a newbie.";
+        System.out.println(id);
         int year = 2021;
         String id1 = idea + year;
-        System.out.println(idea);
+        System.out.println(id1);
     }
 }
