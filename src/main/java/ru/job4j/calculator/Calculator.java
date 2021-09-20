@@ -1,19 +1,19 @@
 package ru.job4j.calculator;
 
-public class Calculator {
+import static ru.job4j.math.MathFunction.*;
+
+class MathCalculator {
+
+    public static double sumAndMultiply(double first, double second) {
+        return sum(first, second)
+                + multiply(first, second)
+                + minus(first, second)
+                + div(first, second)
+                + bmx(first, second)
+                + rip(first, second);
+    }
 
     public static void main(String[] args) {
-        int one = 1;
-        int two = 2;
-        int six = 6;
-        int four = 4;
-        int five = 5;
-        int sixDivTwo = six / two;
-        int fiveMinusTwo = five - two;
-        int fourTimeTwo = four * two;
-        System.out.println(sixDivTwo);
-        System.out.println(fiveMinusTwo);
-        System.out.println(fourTimeTwo);
-
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
     }
 }
