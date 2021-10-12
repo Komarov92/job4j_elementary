@@ -11,7 +11,7 @@ public class ChessBoardTest {
         int x2 = 5;
         int y2 = 3;
         int result = ChessBoard.way(x1, y1, x2, y2);
-        int expected = 2;
+        int expected = 3;
         Assert.assertEquals(expected, result);
     }
 
